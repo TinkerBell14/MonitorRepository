@@ -3,15 +3,18 @@
 Application Details
 
 1) Process Monitor Job
+
    This is a windows service which should run every 5 minutes to collect all the running processess and add or update it into the database table.
    
 2) Process Monitor API
+
    This is a REST API which exposes endpoints to get process details to the client. 
    The API uses basic authentication. It requires username and password. For testing purpose test userName and password is used
    userName - TestUser
    password - TestPassword
    
 3) Process Monitor Client 
+
    This is UI application which is written in Angular. It allows user to filter the list of process based on Process Name, Process started from date, Process started to date.
    This UI also has validation for from date and to date. If nothing is entered it gets all active process running on the server.
    The list if ordered by Process which has maximum size.
